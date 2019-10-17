@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-charlie = User.create(username: "Charlie")
-jeff = User.create(username: "Jeff")
-ali = User.create(username: "Ali")
-josh = User.create(username: "Josh")
+randy = User.create(username: "Randy", password: "123456")
+jeff = User.create(username: "Jeff", password: "123456")
+reg = User.create(username: "Regis", password: "123456")
+tom = User.create(username: "Tom", password: "123456")
 
-charlie.followers << [jeff, ali, josh]
+randy.followers << [jeff, reg, tom]
